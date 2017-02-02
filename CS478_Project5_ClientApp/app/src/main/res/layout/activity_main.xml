@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.minuf.cs478_project5_clientapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Song Number : "
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:id = "@+id/songNumber"
+        />
+
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/songId"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/songNumber"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY"
+        android:id="@+id/btnPlayMusic"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/songNumber"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAUSE"
+        android:id="@+id/btnPauseMusic"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@+id/songId"
+        android:layout_toRightOf="@+id/btnPlayMusic" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESUME"
+        android:id="@+id/btnResumeMusic"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/btnPlayMusic" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP"
+        android:id="@+id/btnStopMusic"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@+id/btnPauseMusic"
+        android:layout_toRightOf="@id/btnResumeMusic"/>
+
+    <TextView
+        android:layout_below="@id/btnResumeMusic"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REQUESTS LIST"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/showRequests"
+        />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/requestsList"
+        android:layout_below="@+id/showRequests"
+        android:layout_gravity="center_vertical"
+        />
+
+
+</RelativeLayout>
